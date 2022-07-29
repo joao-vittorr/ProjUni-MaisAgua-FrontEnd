@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home_test');
 });
+
+Route::get('/report', function () {
+    return view('report');
+});
+
+Route::get('/principal', function () {
+    return view('principal');
+});
+
+
+//Gogle URL
+
+Route::prefix('google')->name('google.')->group( function(){
+    Route::get('login', [GoogleController::class, 'loginWithGoogle'])->name('login');
+    Route::any('callback',[GoogleController::class, 'callbackFromGoogle'])->name('callback');
+});
