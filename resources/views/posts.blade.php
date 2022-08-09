@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Informar problema</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="query">Consultar</a>
+            <a class="nav-link" href="#">Consulta</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="report">Boletim</a>
+            <a class="nav-link" href="#">Consulta</a>
             </li>
         </ul>
         <form class="d-flex" role="search">
@@ -36,14 +36,8 @@
         
         </form>
         </div>
-        
     </div>
-    <div>
-       
-</div>
-
     </nav>
-
 
 
     <!--Conteúdo da página-->
@@ -51,42 +45,56 @@
 
     <div class="centralizar">
         <div class="container">
-            <h3 class="text-center">CADASTRAR PROBLEMA</h3>
-            <form action="" method="POST">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Tipo</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                    <option value="0">Selecione uma opção</option>
-                    <option value="1">Vazamento</option>
-                    <option value="2">Falta de Água</option>
-                    <option value="3">Pressão da Água</option>
-                    <option value="4">Manutenção</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                <label for="exampleFormControlInput1">Latitude</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="-0000000">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Longitude</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="-0000000">
-                </div>
-                <div class="form-group">
-                <label for="formFileMultiple" class="form-label">Anexar fotos</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple />
-                </div>
-                <div class="form-group">
-                <label for="exampleFormControlTextarea1">Descrição</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="container">
-                <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
-    </div>   
+            <h3 class="text-center">BOLETIM</h3>
 
+           
 
+<style> 
+    #example1 {
+        border: 1px solid Grey;
+        padding: 10px;
+        border-radius: 25px;
+        }
+
+    #example2 {
+        border: 1px solid Grey;
+        padding: 10px;
+        border-radius: 25px;
+        }
+</style>
+
+<body>
+
+       
+            <div id="example1">
+        <p>The border-radius property defines the radius of the element's corners.</p>
+</div>
+
+        
+            <div id="example2">
+        <p>If two values are set; the first one is for the top-left and bottom-right corner, the second one for the top-right and bottom-left corner.</p>
+</div>
+
+        
+
+</body>
+</html>
+        
+    </div>
+    </div>  
+    
+    <div class= "paginacao">
+    <nav aria-label="...">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">1</span>
+    </li >
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+
+    </div>
 
 
     
@@ -107,4 +115,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-

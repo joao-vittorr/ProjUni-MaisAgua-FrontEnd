@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LayoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,27 @@ Route::get('/principal', function () {
     return view('principal');
 });
 
+Route::get('/teste', function () {
+    return view('teste');
+});
+
+
+Route::get('/posts', function () {
+    return view('posts');
+});
+
+
+Route::get('/query', function () {
+    return view('query');
+});
+
+Route::get('/teste2', function () {
+    return view('teste2');
+});
+
+
+
+
 
 //Gogle URL
 
@@ -32,3 +54,10 @@ Route::prefix('google')->name('google.')->group( function(){
     Route::get('login', [GoogleController::class, 'loginWithGoogle'])->name('login');
     Route::any('callback',[GoogleController::class, 'callbackFromGoogle'])->name('callback');
 });
+
+//Route::get('/template', function () {
+  //  return view('template');
+//});
+
+Route::get('/',[LayoutController::class, "index"])->name('home_page');
+

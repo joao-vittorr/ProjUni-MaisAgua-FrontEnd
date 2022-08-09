@@ -30,8 +30,11 @@
             </li>
         </ul>
         <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn bg-light btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2"  type="search" placeholder="O que você procura..." aria-label="Search">
+            <button class="btn bg-light btn-outline-success" type="submit">Pesquisar</button>
+
+
+            
         </form>
         </div>
     </div>
@@ -46,7 +49,7 @@
             <h3 class="text-center">BOLETIM</h3>
             <form action="" method="POST">
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Tipo</label>
+                    <label for="exampleFormControlSelect1">Tipo:</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                     <option value="0">Selecione uma opção</option>
                     <option value="1">Vazamento</option>
@@ -56,26 +59,34 @@
                     </select>
                 </div>
                 <div class="form-group">
-                <label for="exampleFormControlInput1">Localização</label>
+                <label for="exampleFormControlInput1">Localização:</label>
+
+
+                <div class="card">
+
+            <div class="card-body" style="border:100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2716145501336!2d-35.42694978528191!3d-6.48724839530716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad8fcf393cde8d%3A0x70898cede98f3a52!2sR.%20Jos%C3%A9%20Alexandre%20da%20Silva%2C%20Nova%20Cruz%20-%20RN%2C%2059215-000!5e0!3m2!1spt-BR!2sbr!4v1659049905675!5m2!1spt-BR!2sbr" 
+                    width="1190" 
+                    height="90"
+                    style="border:10;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </div>
+            </iframe>
+            </div>
                 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2716145501336!2d-35.42694978528191!3d-6.48724839530716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad8fcf393cde8d%3A0x70898cede98f3a52!2sR.%20Jos%C3%A9%20Alexandre%20da%20Silva%2C%20Nova%20Cruz%20-%20RN%2C%2059215-000!5e0!3m2!1spt-BR!2sbr!4v1659049905675!5m2!1spt-BR!2sbr" 
-                     width="530" 
-                     height="100"
-                    style="border:100;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
                 
                 </div>
 
                 <div class="form-group">
-                <label for="exampleFormControlTextarea1">Descrição</label>
+                <label for="exampleFormControlTextarea1">Descrição:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <button type="button" class="btn btn-primary" border-radius="10px;">Enviar</button>
                 <div class="container">
-                <input type="submit" value="Enviar">
-                </div>
+            
+                
             </form>
         </div>
     </div>   
@@ -101,5 +112,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
