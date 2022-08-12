@@ -6,6 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="{{asset("css/app.css")}}" rel="stylesheet" />
+    <script>
+
+    function initMap() {
+
+    var macc = {lat: 42.1382114, lng: -71.5212585};
+    var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 15, center: macc});
+    var marker = new google.maps.Marker({position: macc, map: map});
+
+}
+
+</script>
+
+<script async defer
+
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeD0TKqU9r-PvYOZRBrw22mjVglqDupK4&callback=initMap">
+     
+</script>
     <title>+Água</title>
 </head>
 <body>
@@ -38,7 +56,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a class="btn btn-mx bg-light btn-google  btn-outline" href="teste">
+                <a class="btn btn-mx bg-light btn-google  btn-outline" href="login">
                         <img src="https://img.icons8.com/color/16/000000/google-logo.png">Entrar</a>
                 </div>
             </div>
@@ -53,13 +71,13 @@
 
 
 
-@yield('content');
+
 
 
 
     <!---conteúdo da página --->
 
-
+    @yield('content')
 
 
 

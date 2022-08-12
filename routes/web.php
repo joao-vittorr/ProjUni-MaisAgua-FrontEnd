@@ -26,8 +26,8 @@ Route::get('/principal', function () {
     return view('principal');
 });
 
-Route::get('/teste', function () {
-    return view('teste');
+Route::get('/login', function () {
+    return view('login');
 });
 
 
@@ -39,13 +39,6 @@ Route::get('/posts', function () {
 Route::get('/query', function () {
     return view('query');
 });
-
-Route::get('/teste2', function () {
-    return view('teste2');
-});
-
-
-
 
 
 //Gogle URL
@@ -59,5 +52,9 @@ Route::prefix('google')->name('google.')->group( function(){
   //  return view('template');
 //});
 
-Route::get('/',[LayoutController::class, "index"])->name('home_page');
+Route::get('/',[LayoutController::class, "index"])->name('home');
+
+
+
+
 

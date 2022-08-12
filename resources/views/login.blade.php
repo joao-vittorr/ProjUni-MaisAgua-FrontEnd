@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-scope" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
     <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
      
