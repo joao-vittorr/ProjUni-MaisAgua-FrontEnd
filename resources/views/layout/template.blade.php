@@ -8,10 +8,25 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
     <script src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
 
-<script async defer
+    <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
+    <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeD0TKqU9r-PvYOZRBrw22mjVglqDupK4&callback=initMap">
-     
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeD0TKqU9r-PvYOZRBrw22mjVglqDupK4&callback=initMap"></script>
+    
+   <script>
+function initMap() {
+    var macc = {lat: -6.479984036211917, lng: -35.43179852420206};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: macc});
+
+    $.ajax("{{route('mock')}}").done(resp => {
+        $(resp).each(function(i, probl){
+            var marker = new google.maps.Marker({position: probl, map: map, label:probl.tipo});
+        })
+    })
+}
 </script>
     <title>+Água</title>
 </head>
@@ -41,13 +56,31 @@
             </form>
 
 
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      var gmb_api_version = 'https://mybusinessaccountmanagement.googleapis.com/v1';
+      function onSignIn(googleUser) {
+        console.log('texto')
+        //Dados úteis para seus scripts do lado do cliente:
+        var profile = googleUser.getBasicProfile();
+        console.log('Full Name: ' + profile.getName());
+        console.log("Email: " + profile.getEmail());
+        var access_token = googleUser.getAuthResponse().access_token;
 
+        //Usando os dados de login para fazer uma chamada de APIs de perfil comercial
+        var req = gmb_api_version + '/accounts';
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', req);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
 
-            <div class="row">
-                <div class="col-md-12">
-                <a class="btn btn-mx bg-light btn-google  btn-outline" href="login">
-                        <img src="https://img.icons8.com/color/16/000000/google-logo.png">Entrar</a>
-                </div>
+       //Exibindo a resposta da API
+        xhr.onload = function () {
+          document.body.appendChild(document.createTextNode(xhr.responseText));
+        }
+        xhr.send();
+     }
+    </script>
+    
             </div>
         </div>
     </div>

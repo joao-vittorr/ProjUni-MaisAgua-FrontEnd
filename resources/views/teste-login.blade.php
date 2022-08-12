@@ -1,3 +1,4 @@
+<!-- The top of file index.html -->
 <html lang="en">
   <head>
     <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
@@ -5,27 +6,23 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-
-
-
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
-      <spam id="not_signed_inifsgo6k25jwm">Entar</spam>
       var gmb_api_version = 'https://mybusinessaccountmanagement.googleapis.com/v1';
       function onSignIn(googleUser) {
-        //Dados úteis para seus scripts do lado do cliente:
+        // Useful data for your client-side scripts:
         var profile = googleUser.getBasicProfile();
         console.log('Full Name: ' + profile.getName());
         console.log("Email: " + profile.getEmail());
         var access_token = googleUser.getAuthResponse().access_token;
 
-        //Usando os dados de login para fazer uma chamada de APIs de perfil comercial
+        //Using the sign in data to make a Business Profile APIs call
         var req = gmb_api_version + '/accounts';
         var xhr = new XMLHttpRequest();
         xhr.open('GET', req);
         xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
 
-       //Exibindo a resposta da API
+        //Displaying the API response
         xhr.onload = function () {
           document.body.appendChild(document.createTextNode(xhr.responseText));
         }
