@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="{{asset("css/app.css")}}" rel="stylesheet" />
-    <script>
-
-    function initMap() {
-
-    var macc = {lat: 42.1382114, lng: -71.5212585};
-    var map = new google.maps.Map(
-    document.getElementById('map'), {zoom: 15, center: macc});
-    var marker = new google.maps.Marker({position: macc, map: map});
-
-}
-
-</script>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" />
+    <script src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
 
 <script async defer
 
@@ -33,7 +22,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand logo" href="#"><img class="logo" src="{{asset("img/logo.png")}}" alt="Logo mais água"></a>
+        <a class="navbar-brand logo" href="#"><img class="logo" src="{{asset('img/logo.png')}}" alt="Logo mais água"></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
