@@ -40,6 +40,10 @@ Route::get('/query', function () {
     return view('query');
 });
 
+Route::get('/qq', function () {
+    return [["lat"=>-6.479984036211917, "lng"=>-35.43179852420206, "tipo"=>"vazamento"],   ["lat"=>-6.485425109762347, "lng"=>-35.426671084584484, "tipo"=>"degetos"] ];
+});
+
 Route::get('/teste-login', function () {
     return view('teste-login');
 });

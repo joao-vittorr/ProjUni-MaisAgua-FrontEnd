@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="cadastrarProblema">Informar problema</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="query">Consultar</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="report">Boletim</a></li>
-                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2git " data-onsuccess="onSignIn" data-theme="dark"></span></a>
+                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2git  " data-onsuccess="onSignIn" data-theme="dark"></span></a>
                     </li>
                 </ul>
             </div>
