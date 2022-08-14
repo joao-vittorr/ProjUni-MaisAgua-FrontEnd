@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Site de Anúncios de Veículos" />
-    <meta name="author" content="João Vitor e John Wendel" />
+    <meta name="description" content="Site de reclamação com sistema de água e esgoto" />
+    <meta name="author" content="João Vitor, John Wendel, Monize e Antônio" />
     <title>+Água</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="{{asset('css/app.css')}}" rel="stylesheet" />
@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-
+    
     
 
     <!---conteúdo da página --->

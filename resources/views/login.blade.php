@@ -1,13 +1,10 @@
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
     <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-
-
-
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
       <spam id="not_signed_inifsgo6k25jwm">Entar</spam>

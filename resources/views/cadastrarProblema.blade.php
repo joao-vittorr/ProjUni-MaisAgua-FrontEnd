@@ -7,7 +7,7 @@
 
     <div class="centralizar">
         <div class="container">
-            <h3 class="text-center">___________________________ CADASTRAR PROBLEMA _____________________________</h3>
+            <h3 class="text-center">CADASTRAR PROBLEMA</h3><hr>
             <form action="" method="POST">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo:</label>
@@ -18,24 +18,24 @@
                     <option value="3">Pressão da Água</option>
                     <option value="4">Manutenção</option>
                     </select>
-                    
-                    </div>
-                    <div class="form-group">
-                    <label for="formFileMultiple" class="form-label">Anexar fotos:</label>
-                    <input class="form-control" type="file" id="formFileMultiple" multiple />
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Localização:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="-0000000">
-                </div>
-                </div>
-                  
-                <!--<div class="container">
-                <input type="submit" value="Enviar">-->
+                    </div><br/>
 
-                <div class="container1">
-                    <button type="submit" class="btn btn-primary">Publicar</button>
-                </div>
+                    <div class="form-group">
+                        <label for="formFileMultiple" class="form-label">Fotos do problema:</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div><br/>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Localização:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="-0000000">
+                    </div><br/>
+
+                    <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descrição:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div><br/>
+                    <button type="button" class="btn btn-primary" border-radius="10px;">Enviar</button>
+                    <br/>
                 </div>
             </form>
         </div>
