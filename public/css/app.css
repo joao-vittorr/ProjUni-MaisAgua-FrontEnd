@@ -11307,30 +11307,18 @@ textarea.form-control-lg {
 }
 
 
-/*Configuração do footer no final */
-footer {
-  position: fixed;
-  bottom:0;
-  left:0;
-  width: 100%;
-  color: #fff;
-}
-
-footer a{
-  color: white;
-  text-decoration: none;
-}
-
-footer a:hover{
-  color: black;
-  text-decoration: none;
-}
-
 /*configuração da logo*/
 .logo{
   width: 100px;
 }
 
+.maiorfont{
+  font-size: 1.1em;
+}
+
+footer{
+  color: white;
+}
 /*Css das páginas*/
 
 iframe{
@@ -11352,5 +11340,9 @@ iframe{
 }
 
 
-
+/*Configuração do mapa*/
+#map {
+  height: 100%;
+  background-color: grey;
+}
 

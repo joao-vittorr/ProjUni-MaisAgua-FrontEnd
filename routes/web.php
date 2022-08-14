@@ -15,15 +15,11 @@ use App\Http\Controllers\LayoutController;
 */
 
 Route::get('/', function () {
-    return view('home_test');
+    return view('home');
 });
 
 Route::get('/report', function () {
     return view('report');
-});
-
-Route::get('/principal', function () {
-    return view('principal');
 });
 
 Route::get('/login', function () {
@@ -33,6 +29,10 @@ Route::get('/login', function () {
 
 Route::get('/posts', function () {
     return view('posts');
+});
+
+Route::get('/cadastrarProblema', function () {
+    return view('cadastrarProblema');
 });
 
 
