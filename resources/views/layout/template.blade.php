@@ -47,7 +47,7 @@
 
 
     <!--Footer ou roda pé-->
-        <footer class="py-3  navbar-dark bg-primary">
+        <footer class="py-3 navbar-dark bg-primary">
             <p class="text-center">&copy; 2022 Mais Água, Inc</p>
         </footer>
 
