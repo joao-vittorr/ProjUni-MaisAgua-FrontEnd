@@ -15,6 +15,11 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeD0TKqU9r-PvYOZRBrw22mjVglqDupK4&callback=initMap">   
     </script>
 
+    <!--google autenticação-->
+    <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
+    <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 </head>
 <body>
@@ -31,14 +36,38 @@
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="cadastrarProblema">Informar problema</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="query">Consultar</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="report">Boletim</a></li>
-                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><img src="https://img.icons8.com/color/16/000000/google-logo.png">{{__("Login")}}</a>
+                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2git " data-onsuccess="onSignIn" data-theme="dark"></span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    
+    <!--autenticação do google-->
+
+    <script>
+      <spam id="not_signed_inifsgo6k25jwm">Entar</spam>
+      var gmb_api_version = 'https://mybusinessaccountmanagement.googleapis.com/v1';
+      function onSignIn(googleUser) {
+        //Dados úteis para seus scripts do lado do cliente:
+        var profile = googleUser.getBasicProfile();
+        console.log('Full Name: ' + profile.getName());
+        console.log("Email: " + profile.getEmail());
+        var access_token = googleUser.getAuthResponse().access_token;
+
+        //Usando os dados de login para fazer uma chamada de APIs de perfil comercial
+        var req = gmb_api_version + '/accounts';
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', req);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+
+       //Exibindo a resposta da API
+        xhr.onload = function () {
+          document.body.appendChild(document.createTextNode(xhr.responseText));
+        }
+        xhr.send();
+      }
+    </script>
 
     <!---conteúdo da página --->
 
