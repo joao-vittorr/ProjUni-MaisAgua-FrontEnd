@@ -34,7 +34,8 @@
                     <label for="exampleFormControlTextarea1">Descrição:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div><br/>
-                    <button type="button" class="btn btn-primary" border-radius="10px;">Enviar</button>
+                    <button type="submit" class="btn btn-primary" border-radius="10px;">Enviar</button>
+                    <button type="reset" class="btn btn-primary" border-radius="10px;">Restaurar</button>
                     <br/>
                 </div>
             </form>

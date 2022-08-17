@@ -17,7 +17,7 @@
 
     <!--google autenticação-->
     <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
-    <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="571112413928-gntirje3tn3bve9r6lmtj5nra61fhndc.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 
@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="cadastrarProblema">Informar problema</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="query">Consultar</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="report">Boletim</a></li>
-                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2git  " data-onsuccess="onSignIn" data-theme="dark"></span></a>
+                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></span></a>
                     </li>
                 </ul>
             </div>

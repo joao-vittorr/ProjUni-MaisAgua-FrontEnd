@@ -1,7 +1,7 @@
 <html lang="pt-br">
   <head>
     <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
-    <meta name="google-signin-client_id" content="243464921032-0l8e6buqrspj1ct4p371ii081uo4okoc.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="AIzaSyCEVnXbK3RFVGSU6HFHruS2b8wfzHqFJeM">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
