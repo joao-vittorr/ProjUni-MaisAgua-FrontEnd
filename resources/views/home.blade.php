@@ -11,7 +11,7 @@
             var map = new google.maps.Map(
                 document.getElementById('map'), {zoom: 15, center: macc});
 
-                $.ajax("http://127.0.0.1:8000/qq").done(resp => {
+                $.ajax("http://localhost:8000/qq").done(resp => {
                     $(resp).each(function(i, probl){
                         var marker = new google.maps.Marker({position: probl, map: map, label:probl.tipo});
                     })
