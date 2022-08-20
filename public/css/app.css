@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 
 
@@ -11342,7 +11342,7 @@ iframe{
 
 /*Configuração do mapa*/
 #map {
-  height: 85%;
+  height: 100%;
   background-color: grey;
 }
 
@@ -11350,4 +11350,8 @@ footer{
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+.lateral{
+  width: 30%;
 }

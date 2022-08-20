@@ -36,37 +36,31 @@
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="cadastrarProblema">Informar problema</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="query">Consultar</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="report">Boletim</a></li>
-                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="login"><span class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></span></a>
+                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="#">
+                        <div id="buttonDiv"></div></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
     <!--autenticação do google-->
 
-    <script>
-      <spam id="not_signed_inifsgo6k25jwm">Entar</spam>
-      var gmb_api_version = 'https://mybusinessaccountmanagement.googleapis.com/v1';
-      function onSignIn(googleUser) {
-        //Dados úteis para seus scripts do lado do cliente:
-        var profile = googleUser.getBasicProfile();
-        console.log('Full Name: ' + profile.getName());
-        console.log("Email: " + profile.getEmail());
-        var access_token = googleUser.getAuthResponse().access_token;
-
-        //Usando os dados de login para fazer uma chamada de APIs de perfil comercial
-        var req = gmb_api_version + '/accounts';
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', req);
-        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
-
-       //Exibindo a resposta da API
-        xhr.onload = function () {
-          document.body.appendChild(document.createTextNode(xhr.responseText));
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+      <script>
+        function handleCredentialResponse(response) {
+          console.log("Encoded JWT ID token: " + response.credential);
         }
-        xhr.send();
-      }
+        window.onload = function () {
+          google.accounts.id.initialize({
+            client_id: "571112413928-gntirje3tn3bve9r6lmtj5nra61fhndc.apps.googleusercontent.com",
+            callback: handleCredentialResponse
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "outline", size: "large" }  // customization attributes
+          );
+          google.accounts.id.prompt(); // also display the One Tap dialog
+        }
     </script>
 
     <!---conteúdo da página --->
