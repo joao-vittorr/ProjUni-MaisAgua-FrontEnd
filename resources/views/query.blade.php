@@ -43,6 +43,15 @@
 
  </script>
  <br><br>
+
+
+                <div style="margin-top: 30px;">  
+                    <span class="counter-reset"></span>  
+                    <input type="checkbox" class="meucheckbox" id="checkbox1" /><label for="checkbox1" >Mesmo problema</label>  
+                    <span class="counter-print"></span>  
+                <div>  
+
+
                     <div class="botaoCentralizado">
                         <button type="button" class="btn btn-primary" border-radius="10px;">Buscar</button>
                         <a href="/"><button type="button" class="btn btn-primary" border-radius="10px;">Voltar</button></a>

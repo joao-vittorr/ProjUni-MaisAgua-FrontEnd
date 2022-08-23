@@ -68,5 +68,8 @@ Route::get('/',[LayoutController::class, "index"])->name('home');
 
 
 
+Route::get('/visualizarp', function () {
+    return view('visualizarp');
+});
 
 

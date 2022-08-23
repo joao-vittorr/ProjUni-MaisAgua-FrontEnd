@@ -11355,3 +11355,24 @@ footer{
 .lateral{
   width: 30%;
 }
+
+.counter-reset{
+   counter-reset: checkboxcounter;
+}
+
+.meucheckbox{
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   appearance: checkbox;
+   -moz-appearance: checkbox;
+   -webkit-appearance: checkbox;
+}
+
+.counter-print::after{
+   content: "Total: " counter(checkboxcounter);
+}
+
+.meucheckbox:checked{
+   counter-increment: checkboxcounter;
+}

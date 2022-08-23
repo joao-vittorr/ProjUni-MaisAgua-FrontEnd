@@ -70,8 +70,17 @@
 
 
     <!--Footer ou roda pé-->
-        <footer class="py-3 navbar-dark bg-primary">
-            <p class="text-center">&copy; 2022 Mais Água, Inc</p>
+        <footer class= 'bg-primary  '  >
+        <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+
+                        </ul>
+                        <div class="small text-center fst-italic" >Copyright &copy;2022 Mais Água, inc </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         
     <!--Script do bootstrap-->
