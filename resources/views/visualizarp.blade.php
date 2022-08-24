@@ -3,8 +3,6 @@
 
 
 <!--Conteúdo da página-->
-
-
 <div class="centralizar">
     <div class="container">
         <h3 class="text-center">VISUALIZAR PROBLEMA</h3>
@@ -79,7 +77,6 @@
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" border-radius="10px;">Enviar</button>
                 <button type="reset" class="btn btn-primary" border-radius="10px;">Restaurar</button>
-               
             </div>
         </form>
 

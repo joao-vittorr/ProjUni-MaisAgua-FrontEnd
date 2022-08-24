@@ -3,7 +3,7 @@
 
     <!--Conteúdo da página-->
 
-    <div id="map"></div></div>
+    <div id="map"></div>
 
     <script>
         function initMap() {

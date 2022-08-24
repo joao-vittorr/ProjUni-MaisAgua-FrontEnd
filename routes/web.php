@@ -26,7 +26,6 @@ Route::get('/login', function () {
     return view('login');
 });
 
-
 Route::get('/posts', function () {
     return view('posts');
 });
@@ -34,7 +33,6 @@ Route::get('/posts', function () {
 Route::get('/cadastrarProblema', function () {
     return view('cadastrarProblema');
 });
-
 
 Route::get('/query', function () {
     return view('query');
@@ -60,13 +58,7 @@ Route::prefix('google')->name('google.')->group( function(){
     Route::any('callback',[GoogleController::class, 'callbackFromGoogle'])->name('callback');
 });
 
-//Route::get('/template', function () {
-  //  return view('template');
-//});
-
 Route::get('/',[LayoutController::class, "index"])->name('home');
-
-
 
 Route::get('/visualizarp', function () {
     return view('visualizarp');

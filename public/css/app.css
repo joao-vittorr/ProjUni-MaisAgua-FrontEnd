@@ -11321,14 +11321,6 @@ footer{
 }
 /*Css das páginas*/
 
-iframe{
-  position: absolute;
-  width: 70%;
-  height: 80%;
-  margin-left: 15%;
-  margin-right: 15%;
-  align: center;
-}
 
 .container1{
   position: absolute;
@@ -11376,3 +11368,4 @@ footer{
 .meucheckbox:checked{
    counter-increment: checkboxcounter;
 }
+
