@@ -47,8 +47,44 @@
 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
       <script>
+
+
+        function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+        }
+
+        console.log(getCookie("token"))
+
+
         function handleCredentialResponse(response) {
           console.log("Encoded JWT ID token: " + response.credential);
+          console.log(response.credential)
+          setCookie("XSRF-TOKEN", response.credential)
+          setCookie("token", response.credential)
+          //document.cookie = "token="+response.credential;
+          //document.cookie = "XSRF-TOKEN="+response.credential;
+          $.ajax("{{route('update-cookie')}}")//armazena o cookie no php
+          //$("#atualizaCookiePHP").submit();
+          //window.location = window.location;
         }
         window.onload = function () {
           google.accounts.id.initialize({
@@ -61,7 +97,12 @@
           );
           google.accounts.id.prompt(); // also display the One Tap dialog
         }
+
+
     </script>
+    
+
+
 
     <!---conteúdo da página --->
 

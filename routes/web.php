@@ -14,9 +14,9 @@ use App\Http\Controllers\LayoutController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 Route::get('/report', function () {
     return view('report');
@@ -63,5 +63,9 @@ Route::get('/',[LayoutController::class, "index"])->name('home');
 Route::get('/visualizarp', function () {
     return view('visualizarp');
 });
+
+Route::get('/update-cookie', function () {
+    return response()->json(true);
+})->name("update-cookie");
 
 
