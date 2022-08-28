@@ -8,10 +8,10 @@
     <div class="centralizar">
         <div class="container">
             <h3 class="text-center">CADASTRAR PROBLEMA</h3><hr>
-            <form action="" method="POST">
+            <form action="#" th:action="@{/problema}" th:object="${ProblemaDto}" method="POST">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo:</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect1" th:field="*{tipo_problema}">
                     <option value="0">Selecione uma opção</option>
                     <option value="1">Vazamento</option>
                     <option value="2">Falta de Água</option>
@@ -46,7 +46,7 @@
 
                     <div class="form-group">
                     <label for="exampleFormControlTextarea1">Descrição:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" th:field="*{desc_problema}" rows="3"></textarea>
                     </div><br/>
                     <button type="submit" class="btn btn-primary" border-radius="10px;">Enviar</button>
                     <button type="reset" class="btn btn-primary" border-radius="10px;">Restaurar</button>
