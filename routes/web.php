@@ -30,8 +30,12 @@ Route::get('/posts', function () {
     return view('posts');
 });
 
-Route::get('/cadastrarProblema', function () {
-    return view('cadastrarProblema');
+Route::get('/problema', function () {
+    return view('problema');
+});
+
+Route::post('/problema', function () {
+    return view('problema');
 });
 
 Route::get('/query', function () {
