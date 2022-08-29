@@ -12,24 +12,24 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo:</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                    <option value="0">Selecione uma opção</option>
+                    <option value="0">Clique para selecionar uma opção</option>
                     <option value="1">Vazamento</option>
                     <option value="2">Falta de Água</option>
                     <option value="3">Pressão da Água</option>
                     <option value="4">Manutenção</option>
                     </select>
-                    </div><br/>
+                </div><br/>
 
-                    <div class="form-group">
-                        <label for="formFileMultiple" class="form-label">Fotos do problema:</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                    </div><br/>
+                <div class="form-group">
+                    <label for="formFileMultiple" class="form-label">Fotos do problema:</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div><br/>
 
-                    <div class="form-group">
+                <div class="form-group">
                         
-                        <label for="exampleFormControlInput1">Localização:</label>
-                    </div>
-                    <style>
+                    <label for="exampleFormControlInput1">Localização:</label>
+                </div>
+                <style>
                     #map {
 
                         width: 100%;
@@ -38,8 +38,8 @@
 
                     }
 
-                    </style>
-                    <div id="map"></div>
+                </style>
+                <div id="map"></div>
                     <script>
 
                         function initMap() {
@@ -50,16 +50,15 @@
                         }
 
                     </script>
-                    <br><br>
+                <br><br>
 
-                    <div class="form-group">
+                <div class="form-group">
                     <label for="exampleFormControlTextarea1">Descrição:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div><br/>
+                </div><br/>
                     <button type="submit" class="btn btn-primary" border-radius="10px;">Enviar</button>
                     <button type="reset" class="btn btn-primary" border-radius="10px;">Restaurar</button>
-                    <br/>
-                </div>
+                <br/>
             </form>
         </div>
     </div>   

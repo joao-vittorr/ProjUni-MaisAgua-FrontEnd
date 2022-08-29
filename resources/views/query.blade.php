@@ -10,16 +10,15 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo:</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                    <option value="0">Selecione uma opção</option>
+                    <option value="0">Clique para selecionar uma opção</option>
                     <option value="1">Vazamento</option>
                     <option value="2">Falta de Água</option>
                     <option value="3">Pressão da Água</option>
                     <option value="4">Manutenção</option>
                     </select>
-                    </div><br/>
-
+                </div><br/>
                     <label for="exampleFormControlInput1">Localização:</label>
-   
+
                 <style>
                 #map {
 
@@ -48,13 +47,12 @@
                     <span class="counter-reset"></span>  
                     <input type="checkbox" class="meucheckbox" id="checkbox1" /><label for="checkbox1" >Mesmo problema</label>  
                     <span class="counter-print"></span>  
-                <div>  
+                </div>  
 
 
-                    <div class="botaoCentralizado">
-                        <button type="button" class="btn btn-primary" border-radius="10px;">Buscar</button>
-                        <a href="/"><button type="button" class="btn btn-primary" border-radius="10px;">Voltar</button></a>
-                    </div>
+                <div class="botaoCentralizado">
+                    <button type="button" class="btn btn-primary" border-radius="10px;">Buscar</button>
+                    <a href="/"><button type="button" class="btn btn-primary" border-radius="10px;">Voltar</button></a>
                 </div>
             </form>
         </div>
