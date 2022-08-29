@@ -22,10 +22,6 @@ Route::get('/report', function () {
     return view('report');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
 Route::get('/posts', function () {
     return view('posts');
 });
@@ -42,9 +38,6 @@ Route::get('/qq', function () {
     return [["lat"=>-6.479984036211917, "lng"=>-35.43179852420206, "tipo"=>"vazamento"],   ["lat"=>-6.485425109762347, "lng"=>-35.426671084584484, "tipo"=>"degetos"] ];
 });
 
-Route::get('/teste-login', function () {
-    return view('teste-login');
-});
 
 Route::get('/mock_problemas', function () {
     return [["lat"=>-6.479984036211917, "lng"=>-35.43179852420206, "tipo"=>"vazamento"],   ["lat"=>-6.485425109762347, "lng"=>-35.426671084584484, "tipo"=>"degetos"] ];
