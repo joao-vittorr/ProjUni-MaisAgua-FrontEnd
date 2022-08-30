@@ -9,6 +9,7 @@
         <div class="container">
             <h3 class="text-center">CADASTRAR PROBLEMA</h3><hr>
             <form action="#" th:action="@{/problema}" th:object="${ProblemaDto}" method="POST">
+                @csrf
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo:</label>
                     <select class="form-control" id="exampleFormControlSelect1" th:field="*{tipo_problema}">
