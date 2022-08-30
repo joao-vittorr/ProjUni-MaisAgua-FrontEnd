@@ -35,7 +35,7 @@
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="problema">Informar problema</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="query">Consultar</a></li>
-                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="report">Boletim</a></li>
+                    <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="boletim">Boletim</a></li>
                     <li class="nav-item"><a class="nav-link active px-lg-3 py-1 py-lg-1 maiorfont" href="#">
                         <div id="buttonDiv"></div></a>
                     </li>
